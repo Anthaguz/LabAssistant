@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Create a VM" Height="326" Width="724" ResizeMode="NoResize">
+
+    <Grid>
+        
+        <Label Content="Computer name" HorizontalAlignment="Left" Margin="83,39,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="CV_tbxCName" HorizontalAlignment="Left" Margin="254,43,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="358"/>
+        <Label Content="Lab's folder path" HorizontalAlignment="Left" Margin="83,70,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="CV_btnSelectPath" Content="Select" HorizontalAlignment="Left" Margin="572,73,0,0" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="CV_tbxFolderPath" HorizontalAlignment="Left" Margin="254,74,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="313"/>
+        <Label Content="VM Path" HorizontalAlignment="Left" Margin="83,101,0,0" VerticalAlignment="Top"/>
+        <Label Content="VHD Path" HorizontalAlignment="Left" Margin="83,132,0,0" VerticalAlignment="Top"/>
+        <Label Content="VM Operative System" HorizontalAlignment="Left" Margin="83,163,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="CV_CBOS" HorizontalAlignment="Left" Margin="254,165,0,0" VerticalAlignment="Top" Width="358"/>
+        <Label Content="Virtual Switch" HorizontalAlignment="Left" Margin="83,194,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="CV_CBVS" HorizontalAlignment="Left" Margin="254,196,0,0" VerticalAlignment="Top" Width="358"/>
+        <Label x:Name="CV_lblVMPath" Content="" HorizontalAlignment="Left" Margin="254,101,0,0" VerticalAlignment="Top" Width="358"/>
+        <Label x:Name="CV_lblVHDPath" Content="" HorizontalAlignment="Left" Margin="254,132,0,0" VerticalAlignment="Top" Width="358"/>
+        <Button x:Name="CV_btnConfirm" Content="Confirm" HorizontalAlignment="Left" Margin="505,252,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="CV_btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="566,252,0,0" VerticalAlignment="Top" Width="46"/>
+        
+    </Grid>
+</Window>
